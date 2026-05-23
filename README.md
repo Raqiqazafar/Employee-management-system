@@ -1,17 +1,18 @@
-# 📝 Quiz Management System
+# 🏢 Employee Management System
 
-A console-based **Quiz Management System** built in **C++** using Object-Oriented Programming (OOP) concepts. Students can take subject-wise quizzes, view their results, and have scores saved automatically to a file.
+A console-based **Employee Management System** built in **C++** that allows users to securely manage employee records through a login-protected interface.
 
 ---
 
 ## 📌 Features
 
-- 🔐 **Login System** — Secure access with username and password
-- 📚 **Multiple Subjects** — Choose from C++, Java, or HTML quizzes
-- 🔀 **Randomized Questions** — Questions are asked in random order each time
-- 📊 **Result Display** — Shows marks, percentage, and pass/fail status
-- 💾 **Result Saving** — Automatically saves results to `result.txt`
-- 🔁 **Continue Option** — Take multiple quizzes in one session
+- 🔐 **User Authentication** — Sign up and login system with username & password
+- ➕ **Add Employees** — Enter multiple employee records at once
+- 📋 **View Records** — Display all stored employee data
+- 🔍 **Search by ID** — Find a specific employee using their ID
+- ✏️ **Update Records** — Modify existing employee information
+- 🗑️ **Delete Records** — Remove a single record or clear all data
+- 🔄 **Logout & Re-login** — Secure session management
 
 ---
 
@@ -20,66 +21,42 @@ A console-based **Quiz Management System** built in **C++** using Object-Oriente
 | Technology | Usage |
 |---|---|
 | **C++** | Core programming language |
-| **OOP** | Classes, Inheritance, Polymorphism |
-| **File Handling** | Saving results to .txt file |
-| **Abstract Classes** | Base Quiz class with pure virtual function |
-| **Windows.h / conio.h** | Console UI utilities |
-
----
-
-## 🧱 OOP Concepts Used
-
-| Concept | Where Used |
-|---|---|
-| **Encapsulation** | `Student` class with private members |
-| **Abstraction** | Abstract `Quiz` base class |
-| **Inheritance** | `CPPQuiz`, `JavaQuiz`, `HTMLQuiz` extend `Quiz` |
-| **Polymorphism** | `AskQuestions()` overridden in each derived class |
+| **Structs** | Data modeling for employee records |
+| **Windows.h** | Sleep() for UI delay effects |
+| **conio.h** | getch() for menu navigation |
 
 ---
 
 
 ## 💻 Usage
 
-### Login Credentials
-```
-Username: User
-Password: Password
-```
-
-### Steps
-1. **Login** with credentials
-2. Enter your **Name** and **Roll Number**
-3. Select a **subject**:
-   - `1` → C++ Quiz
-   - `2` → Java Quiz
-   - `3` → HTML Quiz
-4. Answer **5 MCQ questions**
-5. View your **result** on screen
-6. Result automatically **saved to** `result.txt`
-7. Press `Y` to take another quiz or any key to exit
+1. **Sign Up** — Create your username and password
+2. **Login** — Enter credentials to access the system
+3. Use the menu to:
+   - Press `1` → Add employee data
+   - Press `2` → Show all records
+   - Press `3` → Search by employee ID
+   - Press `4` → Update employee data
+   - Press `5` → Delete record(s)
+   - Press `6` → Logout
+   - Press `7` → Exit
 
 ---
 
-## 📋 Quiz Subjects & Topics
+## 📊 Employee Data Fields
 
-| Subject | Topics Covered |
+| Field | Type |
 |---|---|
-| **C++** | Operators, I/O, Comments |
-| **Java** | Features, Modifiers, JVM/JDK/JRE, History |
-| **HTML** | Tags, Headings, Web Standards |
+| Name | String |
+| ID | String |
+| Address | String |
+| Contact | Integer |
+| Salary | Integer |
 
 ---
 
-## 📄 Sample Result Output (result.txt)
-
-```
-STUDENT NAME: Ali Hassan
-ROLL NO: 101
-SUBJECT: C++
-MARKS: 4 OUT OF 5
-PERCENTAGE: 80%
-CONGRATS YOU HAVE PASSED
-----------------------------------------
 
 
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
