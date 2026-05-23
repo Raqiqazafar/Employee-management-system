@@ -56,7 +56,3 @@ A console-based **Employee Management System** built in **C++** that allows user
 ---
 
 
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
